@@ -25,6 +25,12 @@ p{
   width:50vw;
   margin-left:auto;
   margin-right:auto;
+  transition: outline 0.3s; /* Smooth effect when hovering */
+}
+
+/* Hover effect: red double outline */
+p:hover {
+  outline: 2px double red;
 }
 
 section{
@@ -34,6 +40,7 @@ section{
 
 #section1{
   height:80vh;
+  position: relative; /* Needed for ::before overlay */
 }
 
 #section1::before{
@@ -95,5 +102,4 @@ If you only learned this basic programming, You would surely now be zessing.
 
 </body>
 </html>
- 
 
