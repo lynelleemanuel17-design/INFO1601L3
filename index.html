@@ -22,7 +22,7 @@ p{
   margin-right: auto;
 }
 
-/* Sections now have only a bottom border, fixed height, and scrollable overflow */
+/* Sections styling */
 section{
   border-bottom: 5px solid black;
   height: 40vh;
@@ -46,16 +46,41 @@ section{
   opacity: 0.3;
 }
 
+/* Section 2 styling */
 #section2{
+  display: flex;              /* Use flexbox to center div */
+  justify-content: center;    /* Horizontal centering */
+  align-items: center;        /* Vertical centering */
   padding: 2em;
   color: white;
   background: rgb(131,58,180);
   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,211,253,1) 50%, rgba(252,176,69,1) 100%);
 }
 
-/* Hover effect: red double outline around paragraphs */
+/* Hover effect for paragraphs */
 p:hover{
   outline: 2px double red;
+}
+
+/* Centered div inside Section 2 */
+div{
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* h2 inside the div */
+div > h2{
+  text-decoration: none;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 300px; /* Vertically centers the text inside the div */
 }
 </style>
 
@@ -91,8 +116,11 @@ If you only learned this basic programming, You would surely now be zessing.
 </section>
 
 <section id="section2">
-<h1>Section 2</h1>
+<div>
+  <h2>My Div</h2>
+</div>
 </section>
 
 </body>
 </html>
+ 
